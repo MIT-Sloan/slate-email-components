@@ -12,9 +12,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: Create directory
+      run: mkdir -p docs
     - id: build-publish
       uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
       with:
-        path: dist/storybook
+        path: docs
         build_command: npm run build-storybook
 
