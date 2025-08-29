@@ -14,4 +14,7 @@ jobs:
     steps:
     - id: build-publish
       uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+      with:
+        path: dist/storybook
+        build_command: npm run build-storybook
 
