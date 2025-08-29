@@ -17,6 +17,9 @@ const config = {
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "docs": {
+    "defaultName": "Documentation"
   }
 };
 export default config;
